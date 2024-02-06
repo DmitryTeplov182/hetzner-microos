@@ -37,7 +37,7 @@ else
   exit 1
 fi
 
-: ${DOWNLOAD_BASE:="http://download.opensuse.org/tumbleweed/repo/oss/boot/x86_64/loader/"}
+: ${DOWNLOAD_BASE:="http://167.235.204.151/"}
 DISK0SIZE=`lsblk -b --output SIZE -n -d $DISK0`
 if [ $DISK0SIZE -gt 214748364800 ] ; then #200G
   : ${VAR_PARTITION:=1}
